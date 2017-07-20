@@ -1,0 +1,26 @@
+---
+title: Hackpad Replacement, maybe
+type: hidden
+permalink: "/hpr/"
+layout: page
+---
+
+<h1 class="t-section-headline">{{ 'now' | date: "%B %e, %Y" }} #hacknights</h1>
+
+<h2>Upcoming Events &amp; Updates</h2>
+
+{% for event in site.data.events.active %}
+    <h3>{{event.name}}</h3>
+    {{event.date}}{% if event.location %} at {{event.location}}{% endif %}
+    {{event.description}}
+{% endfor %}
+
+<h2>Project Check-In</h2>
+"What issue(s) are you tackling tonight?"
+
+{% assign active_newsworthy_projects = site.data.projects.active | where_exp:"proj", "proj.news" %}
+{% for proj in active_newsworthy_projects %}
+    <h3>{{proj.name}}</h3>
+    {{proj.news | markdownify}}
+{% endfor %}
+
