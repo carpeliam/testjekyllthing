@@ -46,6 +46,11 @@
     Kent Johnson's answer to one of the problem statements (this was demo'd at the 2017 Bloomberg What Works Cities conference):
     http://kentsj.com/Misc/Board_of_Zoning_Appeal_Requests_CT.html
 -
+  name: Airbnb data deep dive
+  news: >
+    Project scoping for a deep dive into Inside Airbnb dataset of listings
+    https://data.opendatasoft.com/explore/dataset/airbnb-listings@public/?disjunctive.host_verifications&disjunctive.features&disjunctive.amenities
+-
   name: Tools and Rules for Blockchain-Backed Individual Identity
   news: >
     https://www.meetup.com/Massachusetts-Legal-Hackers/events/239091160
